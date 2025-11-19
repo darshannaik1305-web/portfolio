@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newsletter Subscription</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <h1 class="title">Newsletter Subscription</h1>
+    <div class="actions">
+      <a class="btn" href="index.html" aria-label="Back to Home">← Home</a>
+      <button id="themeToggle" class="btn icon-btn" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle theme">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-label="Intro">
+      <h2 class="hero-title">Stay in the loop</h2>
+      <p class="hero-sub">Subscribe and pick your favorite topics.</p>
+    </section>
+    <section class="card" aria-labelledby="news-title">
+      <h2 id="news-title">Newsletter Subscription</h2>
+      <form id="newsForm" novalidate>
+        <div class="field floating">
+          <input id="newsEmail" name="email" type="email" placeholder=" " required />
+          <label for="newsEmail">Email</label>
+          <span class="error" role="alert"></span>
+        </div>
+        <fieldset class="field">
+          <legend class="label">Topics</legend>
+          <div class="chips">
+            <label class="checkbox chip"><input type="checkbox" name="topics" value="Tech" /> <span>Tech</span></label>
+            <label class="checkbox chip"><input type="checkbox" name="topics" value="Design" /> <span>Design</span></label>
+            <label class="checkbox chip"><input type="checkbox" name="topics" value="AI" /> <span>AI</span></label>
+            <label class="checkbox chip"><input type="checkbox" name="topics" value="News" /> <span>News</span></label>
+          </div>
+        </fieldset>
+        <label class="checkbox">
+          <input type="checkbox" id="newsConsent" required />
+          <span>I agree to receive emails and the privacy policy.</span>
+        </label>
+        <div class="actions end">
+          <button type="submit" class="btn primary" disabled>Subscribe</button>
+        </div>
+        <div class="form-success" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <small>Accessibility-first. HTML5 validation. Light/Dark mode.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

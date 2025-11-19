@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <h1 class="title">User Registration</h1>
+    <div class="actions">
+      <a class="btn" href="index.html" aria-label="Back to Home">← Home</a>
+      <button id="themeToggle" class="btn icon-btn" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle theme">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-label="Intro">
+      <h2 class="hero-title">Create your account</h2>
+      <p class="hero-sub">Fast, secure and accessible sign up.</p>
+    </section>
+    <section class="card" aria-labelledby="reg-title">
+      <h2 id="reg-title">User Registration</h2>
+      <form id="registrationForm" novalidate>
+        <div class="field floating">
+          <input id="regName" name="name" type="text" placeholder=" " required aria-describedby="regNameHelp" />
+          <label for="regName">Full Name</label>
+          <small id="regNameHelp" class="hint">Enter your first and last name.</small>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="field floating with-icon">
+          <span class="leading-icon" aria-hidden="true">@</span>
+          <input id="regEmail" name="email" type="email" placeholder=" " required />
+          <label for="regEmail">Email</label>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="field floating with-icon">
+          <span class="leading-icon" aria-hidden="true">📞</span>
+          <input id="regPhone" name="phone" type="tel" placeholder=" " pattern="^[0-9]{10}$" required aria-describedby="regPhoneHelp" />
+          <label for="regPhone">Phone Number</label>
+          <small id="regPhoneHelp" class="hint">10 digits only.</small>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="grid two">
+          <div class="field floating password-field">
+            <input id="regPassword" name="password" type="password" placeholder=" " minlength="8" required aria-describedby="pwHelp" />
+            <label for="regPassword">Password</label>
+            <button type="button" class="btn link-btn toggle-password" aria-label="Show password">Show</button>
+            <small id="pwHelp" class="hint">Min 8 chars, include letters and numbers.</small>
+            <span class="error" role="alert"></span>
+            <div class="strength" aria-live="polite" aria-atomic="true">
+              <div class="bar" data-lvl="0"></div>
+              <span class="strength-text">Strength: NA</span>
+            </div>
+          </div>
+          <div class="field floating password-field">
+            <input id="regConfirm" name="confirm" type="password" placeholder=" " required />
+            <label for="regConfirm">Confirm Password</label>
+            <button type="button" class="btn link-btn toggle-password" aria-label="Show password">Show</button>
+            <span class="error" role="alert"></span>
+          </div>
+        </div>
+        <div class="actions end">
+          <button type="submit" class="btn primary" disabled>Create Account</button>
+        </div>
+        <div class="form-success" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <small>Accessibility-first. HTML5 validation. Light/Dark mode.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

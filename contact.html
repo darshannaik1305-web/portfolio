@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact / Feedback</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <h1 class="title">Contact / Feedback</h1>
+    <div class="actions">
+      <a class="btn" href="index.html" aria-label="Back to Home">← Home</a>
+      <button id="themeToggle" class="btn icon-btn" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle theme">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-label="Intro">
+      <h2 class="hero-title">We'd love to hear from you</h2>
+      <p class="hero-sub">Send feedback or ask a question.</p>
+    </section>
+    <section class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact / Feedback</h2>
+      <form id="contactForm" novalidate>
+        <div class="grid two">
+          <div class="field floating">
+            <input id="contactName" name="name" type="text" placeholder=" " required />
+            <label for="contactName">Full Name</label>
+            <span class="error" role="alert"></span>
+          </div>
+          <div class="field floating">
+            <input id="contactEmail" name="email" type="email" placeholder=" " required />
+            <label for="contactEmail">Email</label>
+            <span class="error" role="alert"></span>
+          </div>
+        </div>
+        <div class="field floating">
+          <input id="contactSubject" name="subject" type="text" placeholder=" " required />
+          <label for="contactSubject">Subject</label>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="field floating textarea-field">
+          <textarea id="contactMessage" name="message" placeholder=" " rows="5" maxlength="300" required aria-describedby="msgCount"></textarea>
+          <label for="contactMessage">Message</label>
+          <div class="counter" id="msgCount" aria-live="polite" aria-atomic="true">0/300</div>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="actions end">
+          <button type="submit" class="btn primary" disabled>Send Feedback</button>
+        </div>
+        <div class="form-success" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <small>Accessibility-first. HTML5 validation. Light/Dark mode.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

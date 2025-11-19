@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <h1 class="title">Login</h1>
+    <div class="actions">
+      <a class="btn" href="index.html" aria-label="Back to Home">← Home</a>
+      <button id="themeToggle" class="btn icon-btn" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle theme">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-label="Intro">
+      <h2 class="hero-title">Welcome back</h2>
+      <p class="hero-sub">Secure sign in with remember me.</p>
+    </section>
+    <section class="card" aria-labelledby="login-title">
+      <h2 id="login-title">Login</h2>
+      <form id="loginForm" novalidate>
+        <div class="field floating">
+          <input id="loginEmail" name="email" type="text" placeholder=" " required />
+          <label for="loginEmail">Email or Username</label>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="field floating password-field">
+          <input id="loginPassword" name="password" type="password" placeholder=" " required />
+          <label for="loginPassword">Password</label>
+          <button type="button" class="btn link-btn toggle-password" aria-label="Show password">Show</button>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="row between">
+          <label class="checkbox">
+            <input type="checkbox" id="rememberMe" name="remember" />
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="link" aria-label="Forgot Password">Forgot password?</a>
+        </div>
+        <div class="actions end">
+          <button type="submit" class="btn primary" disabled>Login</button>
+        </div>
+        <div class="form-success" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <small>Accessibility-first. HTML5 validation. Light/Dark mode.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

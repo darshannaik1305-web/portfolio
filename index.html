@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Web Page with Multiple Interactive Forms</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span class="brand-name">FormHub</span>
+    </div>
+    <div class="actions">
+      <button id="themeToggle" class="btn icon-btn" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="icon" aria-hidden="true">🌙</span>
+      </button>
+      <button id="menuBtn" class="btn icon-btn" aria-label="Open menu" title="Menu"><span aria-hidden="true">≡</span></button>
+    </div>
+  </header>
+
+  <!-- Overlay Menu -->
+  <div id="menuOverlay" class="menu-overlay" role="dialog" aria-modal="true" aria-labelledby="menuTitle" hidden>
+    <div class="menu-container">
+      <div class="menu-top">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">F</span>
+          <span class="brand-name" id="menuTitle">FormHub</span>
+        </div>
+        <div class="actions">
+          <button id="menuClose" class="btn icon-btn" aria-label="Close menu" title="Close">✕</button>
+        </div>
+      </div>
+      <hr class="menu-divider" />
+      <nav class="menu-nav" aria-label="Form pages">
+        <a href="#card-registration" class="menu-link" data-scroll="card-registration">Registration</a>
+        <a href="#card-login" class="menu-link" data-scroll="card-login">Login</a>
+        <a href="#card-contact" class="menu-link" data-scroll="card-contact">Contact</a>
+        <a href="#card-survey" class="menu-link" data-scroll="card-survey">Survey</a>
+        <a href="#card-newsletter" class="menu-link" data-scroll="card-newsletter">Newsletter</a>
+        <a href="#card-booking" class="menu-link" data-scroll="card-booking">Booking</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-label="Intro">
+      <div class="hero-badge"><span class="check" aria-hidden="true">✔</span> <span>Modern Form Design</span></div>
+      <h2 class="hero-title">
+        <span class="line-1">Beautiful Forms for</span>
+        <span class="line-2">Modern Web Apps</span>
+      </h2>
+      <p class="hero-sub">Explore a comprehensive collection of beautifully designed, accessible forms with real-time validation and seamless user experience.</p>
+      <ul class="hero-features" aria-label="Key features">
+        <li><span class="check" aria-hidden="true">✔</span> Real-time Validation</li>
+        <li><span class="check" aria-hidden="true">✔</span> Mobile Responsive</li>
+        <li><span class="check" aria-hidden="true">✔</span> Accessible Design</li>
+      </ul>
+    </section>
+    <section class="list-section" aria-labelledby="forms-title">
+      <h3 id="forms-title" class="list-title">Explore Our Forms</h3>
+      <p class="list-sub">Click on any form to see it in action with full functionality and validation</p>
+
+      <article id="card-registration" class="form-card" tabindex="-1">
+        <div class="form-card-icon" aria-hidden="true">📄</div>
+        <div class="form-card-body">
+          <h4 class="form-card-title">Registration Form</h4>
+          <p class="form-card-desc">Create account with password strength indicator and real-time validation.</p>
+          <a class="form-card-action" href="registration.html" aria-label="View Registration form">View Form <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article id="card-login" class="form-card" tabindex="-1">
+        <div class="form-card-icon" aria-hidden="true">🔐</div>
+        <div class="form-card-body">
+          <h4 class="form-card-title">Login Form</h4>
+          <p class="form-card-desc">Secure login with remember me and password recovery options.</p>
+          <a class="form-card-action" href="login.html" aria-label="View Login form">View Form <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article id="card-contact" class="form-card" tabindex="-1">
+        <div class="form-card-icon" aria-hidden="true">✉️</div>
+        <div class="form-card-body">
+          <h4 class="form-card-title">Contact Form</h4>
+          <p class="form-card-desc">Send feedback with live character counter and success confirmation.</p>
+          <a class="form-card-action" href="contact.html" aria-label="View Contact form">View Form <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article id="card-survey" class="form-card" tabindex="-1">
+        <div class="form-card-icon" aria-hidden="true">⭐</div>
+        <div class="form-card-body">
+          <h4 class="form-card-title">Survey Form</h4>
+          <p class="form-card-desc">Rate experience with star rating, category select, and attachment upload.</p>
+          <a class="form-card-action" href="survey.html" aria-label="View Survey form">View Form <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article id="card-newsletter" class="form-card" tabindex="-1">
+        <div class="form-card-icon" aria-hidden="true">📰</div>
+        <div class="form-card-body">
+          <h4 class="form-card-title">Newsletter Form</h4>
+          <p class="form-card-desc">Subscribe with topic preferences and consent checkbox.</p>
+          <a class="form-card-action" href="newsletter.html" aria-label="View Newsletter form">View Form <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article id="card-booking" class="form-card" tabindex="-1">
+        <div class="form-card-icon" aria-hidden="true">📅</div>
+        <div class="form-card-body">
+          <h4 class="form-card-title">Booking Form</h4>
+          <p class="form-card-desc">Pick date, time, and participants with preview before booking.</p>
+          <a class="form-card-action" href="booking.html" aria-label="View Booking form">View Form <span class="arrow">→</span></a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-col footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">F</span>
+          <span class="brand-name">FormHub</span>
+        </div>
+        <p class="footer-text">Beautiful, accessible forms for modern web applications.</p>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#forms-title">Documentation</a></li>
+          <li><a href="#forms-title">Examples</a></li>
+          <li><a href="#forms-title">Components</a></li>
+          <li><a href="#">API Reference</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">Resources</h5>
+        <ul class="footer-links">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-connect">
+        <h5 class="footer-title">Connect</h5>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub" class="social-btn" title="GitHub">🐙</a>
+          <a href="#" aria-label="Twitter" class="social-btn" title="Twitter">🐦</a>
+          <a href="#" aria-label="LinkedIn" class="social-btn" title="LinkedIn">in</a>
+          <a href="mailto:hello@example.com" aria-label="Email" class="social-btn" title="Email">✉️</a>
+        </div>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <small>© 2025 FormHub. All rights reserved.</small>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

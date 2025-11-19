@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Survey / Rating</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <h1 class="title">Survey / Rating</h1>
+    <div class="actions">
+      <a class="btn" href="index.html" aria-label="Back to Home">← Home</a>
+      <button id="themeToggle" class="btn icon-btn" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle theme">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-label="Intro">
+      <h2 class="hero-title">Rate your experience</h2>
+      <p class="hero-sub">Quick survey with star rating.</p>
+    </section>
+    <section class="card" aria-labelledby="survey-title">
+      <h2 id="survey-title">Survey / Rating</h2>
+      <form id="surveyForm" novalidate>
+        <div class="field">
+          <label for="surveyCategory" class="label">Category</label>
+          <select id="surveyCategory" name="category" required>
+            <option value="" disabled selected>Select a category</option>
+            <option>UI</option>
+            <option>Performance</option>
+            <option>Support</option>
+            <option>Features</option>
+          </select>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="field">
+          <span class="label">Your Rating</span>
+          <div class="rating" role="radiogroup" aria-label="Star rating">
+            <button type="button" class="star" data-value="1" aria-label="1 star" aria-pressed="false">★</button>
+            <button type="button" class="star" data-value="2" aria-label="2 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-value="3" aria-label="3 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-value="4" aria-label="4 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-value="5" aria-label="5 stars" aria-pressed="false">★</button>
+            <input type="hidden" id="surveyRating" name="rating" required />
+          </div>
+          <span class="error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="surveyAttachment" class="label">Upload attachment (optional)</label>
+          <input id="surveyAttachment" name="attachment" type="file" accept="image/*,.pdf" />
+        </div>
+        <div class="actions end">
+          <button type="submit" class="btn primary" disabled>Submit Survey</button>
+        </div>
+        <div class="form-success" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <small>Accessibility-first. HTML5 validation. Light/Dark mode.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

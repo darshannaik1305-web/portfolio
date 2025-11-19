@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="ic-user" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5m0 2c-5.33 0-8 2.67-8 5v1h16v-1c0-2.33-2.67-5-8-5"/></symbol>
+  <symbol id="ic-lock" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2m-7 8h2v2h-2zm5-8H8V6a4 4 0 0 1 8 0z"/></symbol>
+  <symbol id="ic-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v1l10 6 10-6V6a2 2 0 0 0-2-2m0 14H4a2 2 0 0 1-2-2V8l10 6 10-6v8a2 2 0 0 1-2 2"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27 6.18 3.73-1.64-7.03L21.9 9.24l-7.19-.61L12 2 9.28 8.63 2.1 9.24l5.36 4.73L5.82 21z"/></symbol>
+  <symbol id="ic-news" viewBox="0 0 24 24"><path fill="currentColor" d="M20 22H4a2 2 0 0 1-2-2V6h2v14h16V6h2v14a2 2 0 0 1-2 2M6 2h12v4H6zM8 8h8v2H8zm0 4h8v2H8z"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15H4V10h16z"/></symbol>
+</svg>
